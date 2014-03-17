@@ -12,7 +12,7 @@ result = subprocess.check_output("su - postgres -c \"psql -c 'select pid from pg
 active_connections = len(result.split()) - 1 # subtract one for this connection
 
 # POST the active connections to the spin-docker client
-req = Request('http://%s/v1/check-in' % docker_ip, data='active-connections=%s' % active_connections)
+req = Request('http://%s/v1/check-in' % docker_ip, data='active=%s' % active_connections)
 try:
     resp = urlopen(req)
 except Exception:
