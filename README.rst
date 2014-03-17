@@ -28,7 +28,8 @@ Once you have started a container from this image, you can access it via SSH:
 .. code-block:: bash
     
     # Use your container's host and port
-    $ ssh -i insecure_key root@127.0.0.1 -p 49153 
+    $ ssh -i insecure_key root@127.0.0.1 -p 49153
+    $ su postgres -c 'psql'
 
 Or can connect to the PostgreSQL database directly if you have the PostgreSQL client installed:
 
