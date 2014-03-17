@@ -10,7 +10,7 @@ This image is available as a trusted build on the docker index. The easiest way 
 
 .. code-block:: bash
 
-    $ docker pull spin-docker/sd-postgres
+    $ docker pull atbaker/sd-postgres
 
 Alternatively, you can clone this repository and build the image yourself:
 
